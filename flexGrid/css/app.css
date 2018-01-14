@@ -1,0 +1,26 @@
+.carrito{
+  background-color: #858585;
+}
+
+.carrito:hover{
+  background-color: #49d46a;
+}
+
+.ubicate{
+  margin-left: 2%;
+}
+/*
+.div_img{
+  overflow: hidden;
+  height: 60%;
+  width: 90%;
+}*/
+
+
+.producto{
+  background-color: rgba(240, 189, 153, 0.72);
+}
+
+.mas:hover{
+  text-decoration: underline;
+}
