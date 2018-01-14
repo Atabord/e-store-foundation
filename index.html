@@ -42,7 +42,7 @@
             <a class="button" href="#">Pisos</a>
             <a class="button" href="#">Fontanería</a>
             <a class="button" href="#">Electricidad</a>
-            <a class="button carrito" href="#">Carrito <i class="step fi-shopping-cart size-21"></i> </a>
+            <a class="button hollow carrito" href="#">Carrito <i class="step fi-shopping-cart size-21"></i> </a>
         </nav>
         <nav class="ubicate">
           <ul class="breadcrumbs">
@@ -53,17 +53,58 @@
         </nav>
     </header>
     <section class="row expanded large-uncollapse">
-      <aside class="medium-3 columns ">
+      <aside class="small-12 medium-3 columns ">
         <div class="callout">
           <h2 class="">Búsqueda Avanzada</h1>
           <form action="index.html" method="post" role="form">
             <div class="row small-stack">
-
+              <div class="columns">
+                <label>Por Nombre:
+                  <input type="text" name="nombre" placeholder="Ej: Dywall cocina">
+                </label>
+                <label>Por Referencia:
+                  <input type="text" name="referencia" placeholder="Ej: 100045212" aria-describedby="ayudaReferencia">
+                </label>
+                <p class="help-text" id="ayudaReferencia">Número unico del producto</p>
+                <label>Por categoría:
+                  <select name="categoria">
+                    <option value="drywall">Drywall</option>
+                    <option value="pintura">Pintura</option>
+                    <option value="pisos">Pisos</option>
+                    <option value="fontaneria">Fontanería</option>
+                    <option value="electricidad">Electricidad</option>
+                  </select>
+                </label>
+                <fieldset>
+                  <legend>Tipo de producto:</legend>
+                  <input type="checkbox" name="tipo" value="nuevo" id="nuevo"><label for="nuevo">Nuevo</label>
+                  <input type="checkbox" name="tipo" value="usado" id="usado"><label for="usado">Usado</label>
+                </fieldset>
+                <fieldset>
+                  <legend>Tipo de Precio:</legend>
+                  <input type="radio" name="precio" value="pleno" id="pleno"><label for="pleno">Pleno</label>
+                  <input type="radio" name="precio" value="oferta" id="oferta"><label for="oferta">En Oferta</label>
+                </fieldset>
+                <div class="text-center">
+                  <label>¿Buscar productos agotados?</label>
+                  <div class="switch medium">
+                    <input class="switch-input" type="checkbox" name="ejSwitch" id="ejSwitch">
+                    <label class="switch-paddle" for="ejSwitch">
+                      <span class="switch-active" aria-hidden="true">Sí</span>
+                      <span class="switch-inactive" aria-hidden="true">No</span>
+                    </label>
+                  </div>
+                </div>
+                <hr>
+                <div class="text-center">
+                  <button type="submit" name="enviar" class="button">Buscar <i class="step fi-magnifying-glass size-21"></i></button>
+                </div>
+              </div>
             </div>
           </form>
         </div>
       </aside>
-      <article class=" medium-9 columns callout">
+      <article class="small-12 medium-9 columns callout">
         <h2 class="">Cocina</h2>
         <hr>
         <div class="row large-uncollapse">
